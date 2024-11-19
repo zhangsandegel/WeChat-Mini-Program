@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<!-- navigation bar setting -->
+<navigation-bar title="System Display" back="{{false}}" color="#f6f6f6" background="#1fb7fe" bindtap="getCopyright"></navigation-bar>
+
+<!-- main view -->
+<view class="index-page">
+    <view class="top-part">
+        <view class="btn-part">
+            <view class="btn-item" wx:for="{{btnItemFor}}" wx:key="index" bindtap="showPopup" data-value="{{item.value}}">
+                <image class="btn-item-img" src="{{item.imgSrc}}" alt="Display error!" />
+                <view class="btn-item-text">{{item.text}}</view>
+            </view>
+        </view>
+        <view class="dev-part">
+            <view class="dev-title">Current Device</view>
+            <view class="dev-name">{{deviceName}}</view>
+        </view>
+        <view class="res-part">
+            <view class="res-block">
+                <view class="res-content">
+                    <view class="res-value">100.00</view>
+                    <view class="res-name">predict name (%)</view>
+                </view>
+                <view class="res-btn">
+                    <button class="res-btn-all res-btn-start" bindtap="onStartPress" disabled="{{isTimer}}">Start</button>
+                    <button class="res-btn-all res-btn-stop" bindtap="onStopPress" disabled="{{!isTimer}}">Stop</button>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="bottom-part">
+        <view class="data-title">Data Display</view>
+        <view class="data-item-time" bindtap="upgradeTime">
+            <view class="data-time-left">Time</view>
+            <view class="data-time-right">{{timeData}}</view>
+        </view>
+        <scroll-view class="data-all" scroll-y>
+            <view class="data-item" bindtap="showPopup" wx:for="{{dataArray}}" wx:key="index" data-value="B0{{index}}">
+                <view class="data-left">
+                    <view class="data-left-name">{{item.name}}</view>
+                    <view class="data-left-unit">{{item.unit}}</view>
+                </view>
+                <view class="data-right">{{item.value}}</view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+
+<!-- modify data info -->
+<popup-window isShowPopup="{{isShowPopup[0]}}" popupTitle="Modify Information" inputItem="{{inputItem[0]}}" bindconfirm="onConfirm" bindcancel="onCancel" data-value="0" showItem="{{showItem[0]}}" isClearCache="true"></popup-window>
+
+<!-- modify server -->
+<popup-window isShowPopup="{{isShowPopup[1]}}" popupTitle="Modify Server" inputItem="{{inputItem[1]}}" bindconfirm="onConfirm" bindcancel="onCancel" data-value="1" showItem="{{showItem[1]}}"></popup-window>
+
+<!-- timer setting -->
+<popup-window isShowPopup="{{isShowPopup[2]}}" popupTitle="Timer Setting" inputItem="{{inputItem[2]}}" bindconfirm="onConfirm" bindcancel="onCancel" data-value="2" showItem="{{showItem[2]}}"></popup-window>
+
+<!-- add/delete data -->
+<popup-window isShowPopup="{{isShowPopup[3]}}" popupTitle="Add/Delete Data" inputItem="{{inputItem[3]}}" bindconfirm="onAdd" bindcancel="onDelete" bindinput="onAddDelName" data-value="3" showItem="{{showItem[3]}}" btnMode="{{btnMode}}" confirmText="Add" cancelText="Delete" isClearCache="true"></popup-window>

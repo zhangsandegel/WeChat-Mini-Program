@@ -1,0 +1,13 @@
+{
+    "navigationBarBackgroundColor": "#1fb6fe",
+    "navigationBarTitleText": "Diagram Show",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default",
+    "backgroundColor": "#EEE",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "ec-canvas": "../ec-canvas/ec-canvas"
+      }
+}
+ 

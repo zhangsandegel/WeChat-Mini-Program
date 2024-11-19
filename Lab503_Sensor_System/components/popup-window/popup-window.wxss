@@ -1,0 +1,124 @@
+/* components/popup-window/popup-window.wxss */
+.popup-part {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    width: 80%;
+    /* height: 33%; */
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(34, 28, 28, 0.3);
+    padding: 45rpx 30rpx;
+    box-sizing: border-box;
+}
+
+.popup-title {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    font-weight: 1000;
+    margin-bottom: 20rpx;
+}
+
+.popup-show {
+    margin-top: 30rpx;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.popup-show .popup-show-item {
+    text-align: justify;
+    color: #666;
+    font-size: 13px;
+}
+
+.popup-input {
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 30rpx 0 40rpx 0;
+}
+
+.popup-input .popup-input-left {
+    padding: 10rpx;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    color: #f6f6f6;
+    background-color: #2f9dffdd;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.popup-input .popup-input-right {
+    padding: 8rpx;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    background-color: #e8e8e8;
+    justify-content: center;
+}
+
+.popup-input-left-view {
+    margin: 8rpx;
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+}
+
+.popup-input-right-input {
+    margin: 8rpx;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1.5px solid #2f9dff;
+}
+
+.popup-btn-all {
+    display: flex;
+}
+
+.popup-btn {
+    display: inline-block;
+    font-size: 16px;
+    height: 80rpx;
+    width: 233rpx;
+    border-radius: 12rpx;
+    color: #fff;
+    line-height: 80rpx;
+    /* background: #2f9dff; */
+}
+
+.popup-confirm {
+    /* border: 1px solid #28B463dd; */
+    background-color: #28B463dd;
+}
+
+.popup-confirm[disabled] {
+    background-color: #1e7c45dd !important;
+    color: #ddd8 !important;
+}
+
+.popup-cancel {
+    /* border: 1px solid #FF5733dd; */
+    background-color: #FF5733dd;
+}
+
+.popup-cancel[disabled] {
+    background-color: #b94024dd !important;
+    color: #ddd8 !important;
+}

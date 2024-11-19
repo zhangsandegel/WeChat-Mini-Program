@@ -1,0 +1,5 @@
+<view class="container">
+  <block wx:for="{{ ecLine }}" wx:key="order">
+    <ec-canvas id="{{ item.id }}" canvas-id="{{ item.id }}" ec="{{ item.ecConfig }}"></ec-canvas>
+  </block>
+</view>

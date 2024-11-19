@@ -1,0 +1,24 @@
+<!--components/popup-window/popup-window.wxml-->
+<view class="popup-part {{extClass}}" wx:if="{{isShowPopup}}">
+    <view class="popup-content">
+        <view class="popup-title">{{popupTitle}}</view>
+
+        <view class="popup-show">
+            <view class="popup-show-item" wx:for="{{showItem}}" wx:key="index">{{item.content}}</view>
+        </view>
+
+        <view class="popup-input">
+            <view class="popup-input-left">
+                <view class="popup-input-left-view" wx:for="{{inputItem}}" wx:key="index">{{item.name}}:</view>
+            </view>
+            <view class="popup-input-right">
+                <input class="popup-input-right-input" wx:for="{{inputItem}}" wx:key="index" placeholder="Please input the {{item.name}}" bindinput="onInput" data-index="{{index}}" value="{{item.value}}" />
+            </view>
+        </view>
+
+        <view class="popup-btn-all">
+            <button class="popup-btn popup-confirm" bindtap="popupConfirm" disabled="{{btnMode[0]}}">{{confirmText}}</button>
+            <button class="popup-btn popup-cancel" bindtap="popupCancel" disabled="{{btnMode[1]}}">{{cancelText}}</button>
+        </view>
+    </view>
+</view>

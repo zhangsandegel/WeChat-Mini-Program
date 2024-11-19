@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/characteristic/characteristic",
+    "pages/service/service",
+    "pages/diagram/diagram",
+    "pages/ec-canvas/ec-canvas"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,9 @@
+{
+    "navigationBarBackgroundColor": "#1fb6fe",
+    "navigationBarTitleText": "Bluetooth Search",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default",
+    "backgroundColor": "#EEE",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+}
