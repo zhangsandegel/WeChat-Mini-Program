@@ -12,3 +12,4 @@
 
 
 动图展示：
+![gif](https://github.com/zhangsandegel/WeChat-Mini-Program/blob/main/image/tinywow_448_1731989696_69545717.gif)
