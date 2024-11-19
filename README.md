@@ -20,5 +20,5 @@
 动图展示：
 
 
-<img src="image/tinywow_448_1731989696_69545717.gif" width="80%">
+<img src="image/tinywow_448_1731989696_69545717.gif" width="50%">
 
