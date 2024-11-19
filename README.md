@@ -6,3 +6,9 @@
 
 
 ![image](https://github.com/zhangsandegel/WeChat-Mini-Program/blob/main/image/WechatIMG446.jpg)
+
+实际使用场景图：
+![image](https://github.com/zhangsandegel/WeChat-Mini-Program/blob/main/image/WechatIMG447.jpg)
+
+
+动图展示：
