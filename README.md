@@ -19,4 +19,6 @@
 
 动图展示：
 
-![img](https://github.com/zhangsandegel/WeChat-Mini-Program/blob/main/image/tinywow_448_1731989696_69545717.gif)
+
+<img src="image/tinywow_448_1731989696_69545717.gif" width="80%">
+
