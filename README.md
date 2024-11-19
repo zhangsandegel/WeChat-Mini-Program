@@ -5,10 +5,17 @@
 调用机器学习算法，对数据进行处理，再返回小程序。实现了界面化设计和功能处理
 
 
-![img](https://github.com/zhangsandegel/WeChat-Mini-Program/blob/main/image/WechatIMG446.jpg){:height="50%" width="50%"}
+![img](https://github.com/zhangsandegel/WeChat-Mini-Program/blob/main/image/WechatIMG446.jpg)
+
+
+<img src="image/WechatIMG446.jpg" width="30%">
+
 
 
 实际使用场景图：
+
+
+<img src="image/WechatIMG447.jpg" width="30%">
 
 ![img](https://github.com/zhangsandegel/WeChat-Mini-Program/blob/main/image/WechatIMG447.jpg){:height="50%" width="50%"}
 
